@@ -24,7 +24,8 @@ namespace ReproduceWorkflowError.Workflow
                 .Do(then => DoNothing())
                 .EndWorkflow();
 
-
+            // if we remove the EndWorkflow() then this would result - Workflow  raised error on step 6 Message: Object reference not set to an instance of an object.|
+            // System.NullReferenceException: Object reference not set to an instance of an object.
         }
 
 
