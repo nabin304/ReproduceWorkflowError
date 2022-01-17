@@ -1,4 +1,5 @@
 using ReproduceWorkflowError.Workflow;
+using ReproduceWorkflowError.Workflow.Steps;
 using Serilog;
 using WorkflowCore.Interface;
 
@@ -14,6 +15,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddWorkflow();
+builder.Services.AddTransient<ProcessEvenNumber>();
+builder.Services.AddTransient<ProcessOddNumber>();
+builder.Services.AddTransient<EvaluateInput>();
 
 
 var app = builder.Build();
