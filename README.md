@@ -1,4 +1,4 @@
-## Bug
+## Bug Description
 Let's suppose we have a workflow containing a `When ` statement. This would result in an error message in the log file : 
 
 ``` csharp
@@ -33,4 +33,4 @@ It offers an endpoint that takes integer numbers as an input. If the number is p
 
 So if I give it a negative number to execute the last condition of the When statement, then results in above mentined error log message.
 
->Note: To resolve this issue once can Add the Endworkflow statement then the error message will be gone. Unfortunately, I did not see any documentation about whether we really need to end the workflow or not.
+>Note: To resolve this issue one can Add the Endworkflow statement then the error message will be gone. Unfortunately, I did not see any documentation about whether we really need to end the workflow or not.
