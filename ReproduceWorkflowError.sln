@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReproduceWorkflowError", "ReproduceWorkflowError\ReproduceWorkflowError.csproj", "{1A69FC08-8C95-408A-8601-12DB0CA91AEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReproduceWorkflowError", "ReproduceWorkflowError\ReproduceWorkflowError.csproj", "{1A69FC08-8C95-408A-8601-12DB0CA91AEE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{C28BFE5B-C259-4F61-B3BB-BBA5807FF2D0}"
+	ProjectSection(SolutionItems) = preProject
+		ReproduceWorkflowError\README.md = ReproduceWorkflowError\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
