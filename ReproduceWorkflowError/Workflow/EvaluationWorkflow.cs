@@ -23,9 +23,8 @@ namespace ReproduceWorkflowError.Workflow
                             .Input((step, context) => { step.InputNumber = context.InputNumber; }))
                 .When(_ => EvalResult.None)
                     .Do(then => DoNothing());
-            //.EndWorkflow();
 
-            // if we remove the EndWorkflow() then this would result - Workflow  raised error on step 6 Message: Object reference not set to an instance of an object.|
+            // results an error on the log message:  Workflow  raised error on step 6 Message: Object reference not set to an instance of an object.|
             // System.NullReferenceException: Object reference not set to an instance of an object.
         }
 
