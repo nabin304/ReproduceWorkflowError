@@ -24,7 +24,7 @@ namespace ReproduceWorkflowError.Workflow
                 .When(_ => EvalResult.None)
                     .Do(then => DoNothing());
 
-            // results an error on the log message:  Workflow  raised error on step 6 Message: Object reference not set to an instance of an object.|
+            // On executing the last statement (pass a negative number as an Step input): results an error on the log message:  Workflow  raised error on step 6 Message: Object reference not set to an instance of an object.|
             // System.NullReferenceException: Object reference not set to an instance of an object.
         }
 
