@@ -3,14 +3,18 @@ using WorkflowCore.Models;
 
 namespace ReproduceWorkflowError.Workflow.Steps;
 
-public class IncrementNumber : StepBodyAsync
+public class ProcessOddNumber : StepBodyAsync
 {
     public int InputNumber { private get; set; }
+
 
     public override async Task<ExecutionResult> RunAsync(IStepExecutionContext context)
     {
         await Task.Yield();
-        InputNumber++;
+
+        // process the number.. do anything
+        InputNumber--;
+
         return ExecutionResult.Next();
     }
 }
